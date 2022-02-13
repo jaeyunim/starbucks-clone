@@ -5,9 +5,12 @@
 body {
     color: var(--main-black);
     font-family: 'Nanum Gothic', sans-serif;
+    height: 300vh;
 }
 
 header {
+    position: fixed;
+    width: 100%;
     background-color: #f6f5f0;
     border-bottom: 1px solid #c8c8c8;
 }
@@ -100,18 +103,13 @@ header>.inner {
     right: 5px;
 }
 
-.main-menu {
-}
+.main-menu {}
 
 .main-menu ul.menu {
     display: flex;
     position: absolute;
     right: 0;
     bottom: 0;
-}
-
-.main-menu ul.menu li.menu__item {
-
 }
 
 .main-menu ul.menu li.menu__item .item__name {
@@ -184,4 +182,17 @@ header>.inner {
 .dropdown .dropdown__sub ul.inner li span {
     color: #669900;
     margin: 4px 0 14px;
+}
+
+/* BADGE */
+.badges {
+    position: fixed;
+    margin: 20px;
+    top: 130px;
+    right: 0;
+}
+
+.badges div img{
+    margin: 10px;
+    border-radius: 5px;
 }
