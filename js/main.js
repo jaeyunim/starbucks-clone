@@ -1,6 +1,7 @@
 const search = document.querySelector('.search');
 const searchInput = search.querySelector('input');
 const badgeEl =document.querySelector('.badges')
+const gradualEls = document.querySelectorAll('.news .gradual-img');
 
 function handleSearch() {
     searchInput.focus();
@@ -19,7 +20,6 @@ searchInput.addEventListener("focus", handleFoucs);
 searchInput.addEventListener("blur", handleBlur);
 
 window.addEventListener('scroll', _.throttle(function(){
-    console.log(window.scrollY);
     if(window.scrollY > 500) {
         gsap.to(badgeEl, 0.6, {
             opacity: 0,
@@ -31,4 +31,14 @@ window.addEventListener('scroll', _.throttle(function(){
             display: "block"
         })
     }
+    // gsap.to(요소, 지속시간, 옵션);
 }, 300));
+//_.throttle(함수, 시간);
+
+gradualEls.forEach((gradualEl, index)=>{
+    gsap.to(gradualEl, 1, {
+        delay: (index+1) * 0.5,
+        opacity: 1
+    })
+})
+// gsap.to(요소, 지속시간, 옵션);
