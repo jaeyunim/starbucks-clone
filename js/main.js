@@ -42,3 +42,10 @@ gradualEls.forEach((gradualEl, index)=>{
     })
 })
 // gsap.to(요소, 지속시간, 옵션);
+
+new Swiper('.notice .swiper', {
+    direction: 'vertical',
+    autoplay: true,
+    loop: true
+})
+//

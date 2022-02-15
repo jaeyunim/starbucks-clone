@@ -8,10 +8,25 @@ body {
     height: 300vh;
 }
 
+.btn {
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: brown;
+    color: white;
+}
+
+/* HEADER */
 header {
     position: fixed;
     width: 100%;
-    background-color: #f6f5f0;
+    background-color: var(--main-white);
     border-bottom: 1px solid #c8c8c8;
     z-index: 9;
 }
@@ -192,7 +207,7 @@ header>.inner {
     right: 0;
 }
 
-.badges div img{
+.badges div img {
     margin: 10px;
     border-radius: 5px;
 }
@@ -230,7 +245,7 @@ header>.inner {
     right: -50px;
 }
 
-.news .news__1 img:last-child{
+.news .news__1 img:last-child {
     position: absolute;
     top: 30px;
     right: 250px;
@@ -252,4 +267,77 @@ header>.inner {
     position: absolute;
     bottom: 50px;
     right: 350px;
+}
+
+/* NOTICE */
+.notice {
+    position: relative;
+}
+
+.notice__left {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-black);
+}
+
+.notice__right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-white);
+}
+
+.notice .inner {
+    height: 60px;
+    display: flex;
+}
+
+.notice .inner__left {
+    color: var(--main-white);
+    width: 60%;
+    height: 100%;
+    background-color: var(--main-black);
+    display: flex;
+    align-items: center;
+}
+
+.notice .inner__left div:nth-child(1) {
+    padding-right: 15px;
+}
+
+.notice .swiper {
+    height: 60px;
+    flex-grow: 1;
+}
+
+
+.notice .swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.notice .swiper .swiper-wrapper .swiper-slide a {
+    color: var(--main-white);
+}
+
+.notice .inner__left div:nth-child(3) {
+    padding: 0px 15px;
+}
+
+.notice .inner__right {
+    color: var(--main-black);
+    width: 40%;
+    height: 100%;
+    background-color: var(--main-white);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.notice .inner__right div:last-child {
+    padding: 10px 15px;
 }
