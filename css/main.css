@@ -18,7 +18,7 @@ body {
 }
 
 .btn:hover {
-    background-color: brown;
+    background-color: var(--main-black);
     color: white;
 }
 
@@ -278,7 +278,7 @@ header>.inner {
     position: absolute;
     left: 0;
     width: 50%;
-    height: 100%;
+    height: 60px;
     background-color: var(--main-black);
 }
 
@@ -286,7 +286,7 @@ header>.inner {
     position: absolute;
     right: 0;
     width: 50%;
-    height: 100%;
+    height: 60px;
     background-color: var(--main-white);
 }
 
@@ -308,19 +308,19 @@ header>.inner {
     padding-right: 15px;
 }
 
-.notice .swiper {
+.notice .inner__left .swiper {
     height: 60px;
     flex-grow: 1;
 }
 
 
-.notice .swiper .swiper-wrapper .swiper-slide {
+.notice .inner__left .swiper .swiper-wrapper .swiper-slide {
     display: flex;
     height: 60px;
     align-items: center;
 }
 
-.notice .swiper .swiper-wrapper .swiper-slide a {
+.notice .inner__left .swiper .swiper-wrapper .swiper-slide a {
     color: var(--main-white);
 }
 
@@ -338,6 +338,82 @@ header>.inner {
     justify-content: flex-end;
 }
 
-.notice .inner__right div:last-child {
+.notice .inner__right .material-icons {
     padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* PROMOTION */
+.notice .promotion.hidden {
+    height: 0;
+}
+
+
+.notice .promotion {
+    height: 693px;
+    background-color: var(--main-white);
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.promotion .swiper {
+    width: calc(819px * 3 + 20px);
+    height: 553px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -1238.5px;
+}
+
+.promotion .swiper .swiper-slide {
+    position: relative;
+    opacity: 0.2;
+}
+
+.promotion .swiper .swiper-slide-active {
+    opacity: 1;
+}
+
+.promotion .swiper .btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+}
+
+/* REWARDS */
+.rewards {
+    position: relative;
+    height: 241px;
+}
+
+.rewards .inner__left {
+    background-color: #272727;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.rewards .inner__right {
+    background-color: #d5c798;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.rewards .inner .btn-group {
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+}
+
+.rewards .inner .btn-group input:last-child {
+    width: 140px;
 }
