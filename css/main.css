@@ -5,7 +5,7 @@
 body {
     color: var(--main-black);
     font-family: 'Nanum Gothic', sans-serif;
-    height: 300vh;
+    height: 500vh;
 }
 
 .btn {
@@ -417,3 +417,251 @@ header>.inner {
 .rewards .inner .btn-group input:last-child {
     width: 140px;
 }
+
+
+/* VIDEO */
+.video {
+    position: relative;
+    height: 500px;
+    background-color: var(--main-black);
+    overflow: hidden;
+}
+
+.video__area {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: calc((1920px*0.5625)/-2);
+    margin-left: calc(1920px/-2);
+    background-color: orange;
+    width: 1920px;
+}
+
+.video__area::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+}
+
+#player {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.video .video__cover {
+    background-image: url(/images/video_cover_pattern.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* SEASON-PRODUCT */
+.season-product {
+    background-image: url(/images/season_product_bg.jpg);
+}
+
+.season-product .inner {
+    height: 400px;
+    position: relative;
+}
+
+.season-product .inner .product {
+    
+}
+
+.season-product .text-group {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.season-product .text-group .title {
+    margin-bottom: 30px;
+}
+
+.season-product .text-group .description {
+    margin-bottom: 50px;
+}
+
+.season-product .text-group .more {
+    font-size: 13px;
+}
+
+/* RESERVE */
+.reserve {
+    background-image: url(/images/reserve_bg.jpg);
+    /* background-repeat: no-repeat; */
+}
+
+.reserve .inner{
+    height: 400px;
+    position: relative;
+}
+
+.reserve .reserve-logo {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+.reserve .text-group {
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+
+.reserve .text-group .description {
+    margin-bottom: 10px;
+}
+
+.reserve .text-group .more {
+    font-size: 13px;    
+}
+
+.reserve .reserve-coffee {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* FAVORITE */
+.favorite {
+    background-image: url(/images/favorite_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.favorite .inner {
+    padding: 110px 0;
+}
+
+.favorite .text-group {
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.favorite .favorite-title {
+    margin-bottom: 40px;
+}
+
+.favorite .favorite-description {
+    margin-bottom: 40px;
+}
+
+.favorite .more .btn {
+    display: block;
+}
+
+/* STORE */
+
+.store {
+    background-image: url(/images/reserve_store_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.store .inner {
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store .medal {
+
+}
+
+.medal__front,
+.medal__back {
+    width: 334px;
+    height: 334px;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.medal__front {
+    position: absolute;
+    transform: rotateY(0deg);
+}
+
+.medal__back {
+    transform: rotateY(-180deg);
+}
+
+.medal:hover .medal__front {
+    transform: rotateY(180deg);
+}
+
+.medal:hover .medal__back {
+    transform: rotateY(0deg);
+}
+
+/* FIND-STORE */
+.find-store {
+    background-image: url(/images/find_store_bg.jpg)
+}
+
+.find-store .inner {
+    height: 400px;
+}
+
+.find-store .texture1 {
+    position: absolute;
+    top: 0;
+    left: 400px;
+}
+
+.find-store .texture2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.find-store .picture1 {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.find-store .picture2 {
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    border-radius: 50%;
+}
+
+.find-store .text-group {
+    position: absolute;
+    top: 120px;
+    left: 550px;
+}
+
+.find-store .text-group .store-text1 {
+    margin-bottom: 20px;
+}
+
+.find-store .text-group .store-text2 {
+    margin-bottom: 20px;
+}
+
+
+
+
+
