@@ -5,7 +5,6 @@
 body {
     color: var(--main-black);
     font-family: 'Nanum Gothic', sans-serif;
-    height: 500vh;
 }
 
 .btn {
@@ -474,10 +473,6 @@ header>.inner {
     position: relative;
 }
 
-.season-product .inner .product {
-    
-}
-
 .season-product .text-group {
     position: absolute;
     top: 100px;
@@ -582,10 +577,6 @@ header>.inner {
     align-items: center;
 }
 
-.store .medal {
-
-}
-
 .medal__front,
 .medal__back {
     width: 334px;
@@ -661,7 +652,111 @@ header>.inner {
     margin-bottom: 20px;
 }
 
+/* AWARDS */
+.awards {
+    background-color: #272727;
+}
 
+.awards .inner {
+    padding: 40px 0;
+}
+
+.awards .swiper {
+    width: 100%;
+    height: 40px;
+}
+
+.awards .swiper-prev,
+.awards .swiper-next {
+    width: 42px;
+    height: 42px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    outline: none;
+    color: #fff;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.awards .swiper-prev:hover,
+.awards .swiper-next:hover {
+    background-color: var(--main-white);
+    color: var(--main-black);
+}
+
+.awards .swiper-prev {
+    left: -100px;
+}
+
+.awards .swiper-next {
+    right: -100px;
+}
+
+/* FOOTER */
+footer {
+    font-size: 10px;
+    color: var(--main-white);
+    background-color: #272727;
+    border-top: 1px solid var(--main-white);
+}
+
+footer .inner {
+    width: 900px;
+    padding: 20px 0;
+}
+
+footer .terms {
+    display: flex;
+    /* background-color: tomato; */
+    justify-content: space-between;
+}
+
+footer .terms .term {
+    margin: 15px;
+    opacity: 0.6;
+}
+
+footer .services {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+footer .service a {
+    color: var(--main-white);
+    opacity: 0.6;
+}
+
+footer .service:nth-child(2) {
+    margin: 0px 30px;
+}
+
+footer .enterprise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+footer .enterprise__info {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.6;
+}
+
+footer .enterprise__found {
+    margin: 30px 0px;
+    opacity: 0.6;
+}
 
 
 

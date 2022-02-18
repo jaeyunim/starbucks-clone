@@ -63,6 +63,17 @@ new Swiper(".promotion .swiper", {
     },
 });
 
+new Swiper(".awards .swiper", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: true,
+    navigation: {
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev'
+    }
+})
+
 //   TOGGLE
 const promotionToggle = document.querySelector(".notice .inner__right .material-icons");
 const promotionEl = document.querySelector(".promotion");
