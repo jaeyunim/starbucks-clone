@@ -26,26 +26,18 @@
     <!-- FONT -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link rel="stylesheet" href="css/global/global.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/global/global.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
-    <!-- SWIFER -->
+    <!-- SWIPER -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- JS -->
-    <script defer src="/js/video.js"></script>
-    <script defer src="/js/global/global.js"></script>
-    <script defer src="/js/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
-        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/global/global.js"></script>
 
-    <title>HOME</title>
+    <title>SIGN IN</title>
 </head>
 
 <body>
@@ -57,7 +49,7 @@
             <div class="sub-menu">
                 <ul class="menu">
                     <li>
-                        <a href="/signin/sign.html">Sign In</a>
+                        <a href="#">Sign In</a>
                     </li>
                     <li>
                         <a href="#">My Starbucks</a>
@@ -454,236 +446,28 @@
                     </li>
                 </ul>
             </div>
-            <div class="badges">
-                <div class="badge1">
-                    <img src="/images/badge3.jpg" alt="BADGE">
-                </div>
-                <div class="badge2">
-                    <img src="/images/badge2.jpg" alt="BADGE">
-                </div>
-            </div>
         </div>
     </header>
 
-    <section class="news">
-        <div class="inner gradual-imgs">
-            <div class="title gradual-img">
-                <img src="/images/visual_title.png" alt="NEWS-TITLE">
-                <input type="button" value="자세히 보기" class="btn">
-            </div>
-            <div class="news__1 gradual-img">
-                <img src="/images/visual_cup1.png" alt="LATTE">
-                <img src="/images/visual_cup1_text.png" alt="LATTE-TEXT">
-            </div>
-            <div class="news__2 gradual-img">
-                <img src="/images/visual_cup2.png" alt="MOKA">
-                <img src="/images/visual_cup2_text.png" alt="MOKA-TEXT">
-            </div>
-            <div class="news__3 gradual-img">
-                <img src="/images/visual_spoon.png" alt="CAKE">
-            </div>
-        </div>
-    </section>
-
-    <section class="notice">
-        <div class="notice__left"></div>
-        <div class="notice__right"></div>
-        <div class="inner">
-            <div class="inner__left">
-                <div>공지사항</div>
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#">스타벅스커피 코리아 애플리케이션 버전 업데이트 안내</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">[당첨자 발표] 2021 스타벅스 플래너 영수증</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">크리스마스 & 연말연시 스타벅스 매장 영업시간</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">[당청자 발표] 뉴이어 전자영수증 이벤트</a>
-                        </div>
-                    </div>
+    <section class="login">
+        <div class="login__container">
+            <h1>
+                <span>Welcome!</span>
+                <span>스타벅스에 오신 것을 환영합니다.</span>
+            </h1>
+            <form action="" method="get" class="login__items">
+                <div class="login__items__enter">
+                    <input type="text" id="id">
+                    <input type="passward" id="passward">
+                    <input type="submit" class="submit">
+                    <p>*비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니,<br>정기적으로 비밀번호를 변경하세요! </p>
                 </div>
-                <div class="material-icons">
-                    add_circle
+                <div class="login__items__etc">
+                    <a href="#">회원가입</a>
+                    <a href="#">아이디 찾기</a>
+                    <a href="#">비밀번호 찾기</a>
                 </div>
-            </div>
-            <div class="inner__right">
-                <div>스타벅스 프로모션</div>
-                <div class="material-icons">
-                    upload
-                </div>
-            </div>
-        </div>
-
-        <div class="promotion show">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="/images/promotion_slide1.jpg" alt="">
-                        <a href="#">
-                            <input type="button" value="자세히 보기" class="btn">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/promotion_slide2.jpg" alt="">
-                        <input type="button" value="자세히 보기" class="btn">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/promotion_slide3.jpg" alt="">
-                        <input type="button" value="자세히 보기" class="btn">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/promotion_slide4.jpg" alt="">
-                        <input type="button" value="자세히 보기" class="btn">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/promotion_slide5.jpg" alt="">
-                        <input type="button" value="자세히 보기" class="btn">
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-
-    </section>
-
-    <section class="rewards">
-        <div class="inner__left"></div>
-        <div class="inner__right"></div>
-        <div class="inner">
-            <img src="/images/rewards.jpg" alt="">
-            <div class="btn-group">
-                <input type="button" value="회원가입" class="btn">
-                <input type="button" value="로그인" class="btn">
-                <input type="button" value="e-gift 선물하기" class="btn">
-            </div>
-        </div>
-    </section>
-
-    <section class="video">
-        <div class="video__area">
-            <div id="player"></div>
-        </div>
-        <div class="video__cover"></div>
-        </div>
-
-    </section>
-
-    <section class="season-product">
-        <div class="inner">
-            <img src="./images/season_product_image.png" alt="" class="product">
-            <div class="text-group">
-                <img src="./images/season_product_text1.png" alt="" class="title">
-                <img src="./images/season_product_text2.png" alt="" class="description">
-                <div class="more">
-                    <a href="#" class="btn">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="reserve">
-        <div class="inner">
-            <img src="./images/reserve_logo.png" alt="" class="reserve-logo">
-            <div class="text-group">
-                <img src="./images/reserve_text.png" alt="" class="description">
-                <div class="more">
-                    <a href="#" class="btn">자세히 보기</a>
-                </div>
-            </div>
-            <img src="./images/reserve_image.png" alt="" class="reserve-coffee">
-        </div>
-    </section>
-
-    <section class="favorite">
-        <div class="inner">
-            <div class="text-group">
-                <img src="./images/favorite_text1.png" alt="" class="favorite-title">
-                <img src="./images/favorite_text2.png" alt="" class="favorite-description">
-                <div class="more">
-                    <a href="#" class="btn">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="store">
-        <div class="inner">
-            <div class="medal">
-                <div class="medal__front">
-                    <img src="/images/reserve_store_medal_front.png" alt="">
-                </div>
-                <div class="medal__back">
-                    <img src="/images/reserve_store_medal_back.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="find-store">
-        <div class="inner">
-            <img src="/images/find_store_texture1.png" alt="" class="texture1">
-            <img src="/images/find_store_texture2.png" alt="" class="texture2">
-            <img src="/images/find_store_picture1.jpg" alt="" class="picture1">
-            <img src="/images/find_store_picture2.jpg" alt="" class="picture2">
-            <div class="text-group">
-                <img src="/images/find_store_text1.png" alt="" class="store-text1">
-                <img src="/images/find_store_text2.png" alt="" class="store-text2">
-                <a href="#" class="btn">자세히 보기</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="awards">
-        <div class="inner">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="/images/awards_slide1.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/awards_slide2.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/awards_slide3.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/awards_slide4.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/awards_slide5.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/awards_slide6.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/awards_slide7.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/awards_slide8.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/awards_slide9.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/images/awards_slide10.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-prev">
-                <div class="material-icons">
-                    arrow_back
-                </div>
-            </div>
-            <div class="swiper-next">
-                <div class="material-icons">
-                    arrow_forward
-                </div>
-            </div>
+            </form>
         </div>
     </section>
 
